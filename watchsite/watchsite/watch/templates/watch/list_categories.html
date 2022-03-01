@@ -1,0 +1,10 @@
+
+<div style="display:flex; justify-content:center; margin-top:100px; list-style-type: none; grid-column-gap: 20px; font-size:40px;">
+{% for c in cats %}
+    {% if c.pk == cat_selected %}
+        <li>{{c.name}}</li>
+    {% else %}
+      <li><a href="{{c.get_absolute_url }}">{{c.name}}</a></li>
+    {% endif %}
+{% endfor %}
+    </div>

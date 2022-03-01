@@ -1,0 +1,37 @@
+{% extends 'watch/base.html' %}
+
+{%block content %}
+
+
+
+        <div class="col-sm-6 col-xl-3">
+          <div class="box">
+              {% if posts.photo %}
+              <div class="img-box">
+                <img src="{{ posts.photo.url }}" alt="">
+              </div>
+              {% endif %}
+              <div class="detail-box">
+                <h6>
+                  {{posts.title}}
+                </h6>
+                <h6>
+                  Price:
+                  <span>
+                    {{posts.price}}
+                  </span>
+                </h6>
+              </div>
+              <div class="new">
+                <span>
+                  {{posts.cat}}
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+
+
+
+{%endblock%}
